@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA005273"
+    tools:context=".ViewPass">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Pass"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="663dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="TextSizeCheck">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <!-- Aadhar Number -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:paddingEnd="8dp"
+                    android:text="PassID"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvViewPassID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:text="None"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+            </TableRow>
+
+            <!-- Name -->
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="8dp"
+                    android:text="Name:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvViewPassName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
+            </TableRow>
+
+            <!-- Age -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingEnd="8dp"
+                    android:text="Age:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvViewPassAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="None"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
+            </TableRow>
+
+             <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="8dp"
+                    android:text="Gender:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                 <TextView
+                     android:id="@+id/tvViewPassGender"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:paddingEnd="8dp"
+                     android:text="None"
+                     android:textColor="#FFFFFF"
+                     android:textSize="16sp"
+                     tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+            </TableRow>
+
+
+            <!-- Select Bus Route -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="156dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingEnd="8dp"
+                    android:text="Your Route:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvViewPassRoute"
+                    android:layout_width="151dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingEnd="8dp"
+                    android:text="None"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            </TableRow>
+
+            <!-- Pass Type -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:paddingEnd="8dp"
+                    android:text="Pass Type:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvViewPassPassType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:paddingEnd="8dp"
+                    android:text="None"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+
+            </TableRow>
+
+            <!-- Start Date -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:paddingEnd="8dp"
+                    android:text="Start Date:"
+                    android:textColor="#F6F5F5"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvViewPassStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="None"
+                    android:textColor="#FFFEFE"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </TableRow>
+
+            <!-- End Date -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:paddingEnd="8dp"
+                    android:text="End Date:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvViewEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="None"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+
+            <!-- Pass Amount -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="8dp"
+                    android:text="Pass Amount:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvViewPassAmount"
+                    android:layout_width="228dp"
+                    android:layout_height="match_parent"
+                    android:text="None"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+            </TableRow>
+
+            <!-- Submit Button -->
+
+
+            <Button
+                android:id="@+id/btnDownload"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="Download"
+                tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+
+
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

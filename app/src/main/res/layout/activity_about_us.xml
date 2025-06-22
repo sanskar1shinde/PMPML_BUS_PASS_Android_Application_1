@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA005273"
+    tools:context=".AboutUs">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="TextSizeCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="398dp"
+                        android:layout_height="62dp"
+                        android:text="Welcome to PMPML"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#F8F8F8"
+                        tools:ignore="HardcodedText,TextSizeCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ViewAnimator
+                        android:id="@+id/viewAnimator"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ViewFlipper
+                            android:id="@+id/viewFlipper"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:autoStart="true"
+                            android:flipInterval="2000"
+                            android:inAnimation="@android:anim/slide_in_left"
+                            android:outAnimation="@android:anim/slide_out_right">
+
+                            <ImageView
+                                android:layout_width="396dp"
+                                android:layout_height="297dp"
+                                android:src="@drawable/slider2"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="396dp"
+                                android:layout_height="297dp"
+                                android:src="@drawable/slider3"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="396dp"
+                                android:layout_height="297dp"
+                                android:src="@drawable/slider4"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="396dp"
+                                android:layout_height="297dp"
+                                android:src="@drawable/slider5"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="396dp"
+                                android:layout_height="297dp"
+                                android:src="@drawable/slider6"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="396dp"
+                                android:layout_height="297dp"
+                                android:src="@drawable/slider7"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="396dp"
+                                android:layout_height="297dp"
+                                android:src="@drawable/slider8"
+                                tools:ignore="ContentDescription" />
+                        </ViewFlipper>
+                    </ViewAnimator>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/aboutusinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• PMPML takes pride in being the lifeline of one of the fastest-growing cities in India – Pune. While the cultural capital of Maharashtra boasts of an enriching heritage and an expanding horizon, PMPML takes you on a journey through her crossroads of a glorious past and glitzy modernity. Be it for education, employment or entrepreneurship endeavors, Pune has become a center of excellence. A regular influx of people from all over the country and even outside requires an efficient public transportation system. PMPML by providing access through transport for educational, cultural, markets, economic activities, etc. plays a pivotal role in the sustainable development of the city. As a public transport service provider, we have been able to connect every nook and corner of the city in the most ecologically sustainable manner, by deploying the best in technology, while also making traveling safe and economic for our commuters."
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="The History of Wheels"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Pune’s transportation system has developed gradually over the years. In the early 1940s, tangas were the only mode of transport. It was Pune Nagarpalika that conceived the idea of coming up with a public transport service. The dream took shape when the RTO permitted and M|s Silver Jubilee Motors was assigned the task. Back then there were just 4 routes with 20 buses plying across them. The fleet grew to 46 by 1948."
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Formation of PMT"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#FBFBFB"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:text="• Pune Nagarpalika, in its new Avatar as Pune Municipal Corporation, took charge of the bus service in 1950. Pune Municipal Transport (PMT) was thus started in compliance with the BPMC Act of 1949. The number of buses now stood at 57 and they were plying across 14 routes. By 1960, these figures had gone further up."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Formation of PCMT"
+                        android:textAlignment="center"
+                        android:textColor="#FFFCFC"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• It was on 4th March 1974 that Pimpri Chinchwad Municipal Transport (PCMT) came into being. Their first depot started off with 8 buses plying between Pimpri village and Bhosari. The second one came up in 1988 at Gavhane Vasti, Bhosari and later shifted to Dhawade Vasti in Bhosari itself. By 1988, PCMT had 101 buses plying across 13 routes and 45 schedules."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="20dp"                        android:text="Formation of PMPML"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• With the aim of providing competent and better transport services to the citizens of Pune city and the adjacent city of Pimpri-Chinchwad, the Maharashtra Government has merged Pune Municipal Transport(PMT) and Pimpri-Chinchwad Municipal Transport(PCMT) into Pune Mahanagar Parivahan Mahamandal Ltd. The company was incorporated under the Companies Act, 1956. It was on 19th October 2007 that PMPML came into being as PMT and PCMT merged into a single entity. Ever since, PMPML has been dedicated towards providing commuters with a safe, affordable and convenient transportation service."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="monospace"
+                        android:text="Organization Structure:"
+                        android:textAlignment="center"
+                        android:textColor="#FBF6F6"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/downloadpdf"
+                        android:layout_width="382dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:background="#B45CA8CA"
+                        android:onClick="onPress"
+                        android:text="Document"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#F8F5F5"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="DuplicateIds,HardcodedText,UsingOnClickInXml" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="Vision And Mission"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/thfk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="•Fleet of 3400 buses in Pune and Pimpri-Chinchwad to ensure public transport for all"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,TextContrastCheck,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView147"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="* Buses near Everyone"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#D8C9C9"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/eere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expand service coverage to all parts of the city and improve frequency to a bus every 5 minutes (using the People Near Transit Analysis)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/ytut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="* Greener Buses"
+                        android:textColor="#D8C9C9"
+                        android:textSize="22sp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/eert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transition to cleaner fuels - Number of additional fleet required is calculated based on the 2021 projected population."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/hjgj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="* PMPML E-Bus Proposals In Pipeline"
+                        android:textColor="#D8C9C9"
+                        android:layout_marginTop="20dp"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/fgfd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="=> 1000+  electric buses by 2025"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/gfhfh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="=> Additional 500+ electric minibuses by 2025"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/fgfdgf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="=> Additional Number of Charging Points : 250"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/fdfgfhh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="=> Already operational charging points: 75"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/vbvrgf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="*  Faster Buses Through Dedicated Lanes
+"
+                        android:textColor="#D8C9C9"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/dfdft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="=> Faster travel - Potential travel time reduction of 12 minutes* during rush hours"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/fdfvdfv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="=> Quick deployment- Dedicated bus lanes on proposed corridors to be undertaken"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/fhfhsd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="=>  Bus Priority Lanes - Additional bus priority lanes (BPL) to be created for faster bus mobility"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/grgrgrtgr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="Contact Us"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/dggfgf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp"
+                        android:text="WEDSITE:"
+                        android:textAlignment="center"
+                        android:textColor="#FFCDD2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="www.pmpml.org"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/dhjhj"
+                        android:layout_width="34dp"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp"
+                        android:text="Helpline Number: "
+                        android:textAlignment="center"
+                        android:textColor="#D8C9C9"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/phonelink"
+                        android:layout_width="34dp"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp"
+                        android:text="02024545454"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

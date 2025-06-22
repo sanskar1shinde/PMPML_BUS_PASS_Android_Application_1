@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "819812053587",
+    "project_id": "finalsemproject-930b0",
+    "storage_bucket": "finalsemproject-930b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819812053587:android:35d9134eae08d21129cca6",
+        "android_client_info": {
+          "package_name": "com.example.finalsemproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGQ7EeeCA0hDYpAw3-hIC7J4AaLoQcmMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

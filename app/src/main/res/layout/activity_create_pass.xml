@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA005273"
+    tools:context=".CreatePass">
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="663dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="TextSizeCheck">
+
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                tools:ignore="ExtraText">
+
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Pass"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.456"
+                    android:layout_marginBottom="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.022"
+                    tools:ignore="HardcodedText" />
+
+c
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="8dp"
+                        android:text="Name:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="name"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TextViewEdits,TouchTargetSizeCheck" />
+                </TableRow>
+
+                <!-- Age -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:paddingEnd="8dp"
+                        android:text="Age:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/etAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="Autofill,LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </TableRow>
+
+                <!-- Gender -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="8dp"
+                        android:text="Gender:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck,TextContrastCheck" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#FFFFFF"
+                            android:text="Male"
+                            android:checked="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#FDFAFA"
+                            android:text="Female"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+                    </RadioGroup>
+                </TableRow>
+
+                <!-- Workplace -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:paddingEnd="8dp"
+                        android:text="Workplace:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/etWorkplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </TableRow>
+
+                <!-- Workplace Address -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:paddingEnd="8dp"
+                        android:text="Workplace Address:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/etWorkplaceAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </TableRow>
+
+                <!-- Aadhar Number -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:paddingEnd="8dp"
+                        android:text="Aadhar Number:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/etAadharNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="Autofill,LabelFor,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </TableRow>
+
+                <!-- File Upload (Aadhar Card) -->
+
+                <!-- Select Bus Route -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="151dp"
+                        android:layout_height="48dp"
+                        android:paddingEnd="8dp"
+                        android:text="Select Bus Route:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextSizeCheck,TextContrastCheck" />
+
+                    <Spinner
+                        android:id="@+id/spinnerBusRoute"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#FFFFFF"
+                        android:foregroundTint="#FFFFFF"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </TableRow>
+
+                <!-- Pass Type -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:paddingEnd="8dp"
+                        android:text="Pass Type:"
+                        android:textColor="#FFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPassType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#FAF6F6"
+                        android:dropDownWidth="match_parent"
+                        android:popupBackground="#FAF6F6"
+                        android:textColor="#FFFFFF"
+                        android:visibility="visible"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </TableRow>
+
+                <!-- Start Date -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:paddingEnd="8dp"
+                        android:text="Start Date:"
+                        android:textColor="#F6F5F5"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/tvStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#FFFEFE"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <!-- End Date -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingEnd="8dp"
+                        android:text="End Date:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/tvEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Pass Amount -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="149dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="8dp"
+                        android:text="Pass Amount:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/tvPassAmount"
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Submit Button -->
+
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="Submit"
+                    tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:text="Go Back"
+                    android:textAlignment="center"
+                    tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
+
+
+            </TableLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
